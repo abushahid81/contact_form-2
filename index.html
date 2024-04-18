@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact_Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
 </head>
 <body>
-    
+    <div class="container">
+        <form action="home.html" method="post" onsubmit="return forminput()">
+            <h2>Contact Form</h2>
+            <div class="input-box">
+               <input type="text" id="user" placeholder="Username" />
+               <span id="firstname" class="alert"></span>
+               <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="Password1" placeholder="Password" />
+                <span id="credentials" class="alert"></span>
+                <i class='bx bxs-lock-alt'></i>
+             </div>
+             <div class="input-box">
+                <input type="password" id="Password2" placeholder="Confirm Password" />
+                <span id="credentials2" class="alert"></span>
+                <i class='bx bxs-lock-alt'></i>
+             </div>
+             <div class="input-box">
+                <input type="number" id="mobilenumber" placeholder="Mobile Number" />
+                <span id="mobileno" class="alert"></span>
+                <i class='bx bxs-contact'></i>
+            </div>
+             <div class="input-box">
+                <input type="text" id="email" placeholder="Email" />
+                <span id="emailid" class="alert"></span>
+                <i class='bx bxs-envelope'></i>
+             </div>
+             
+             <div class="remember-forget">
+                <label><input type="checkbox" id="checkbox"> Accept term and conditions</label>
+             </div>
+
+             <button type="submit" class="btn" id="submit">Submit</button>
+
+             <div class="register-link">
+                <p>Don't have a account? <a href="login-form.html" target="_blank">Sign Up</a></p>
+
+             </div>
+        </form>
+    </div>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
